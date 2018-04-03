@@ -1,0 +1,97 @@
+<!--
+
+    Copyright (c) 2018 Oracle and/or its affiliates. All rights reserved.
+
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Distribution License v. 1.0, which is available at
+    http://www.eclipse.org/org/documents/edl-v10.php.
+
+    SPDX-License-Identifier: BSD-3-Clause
+
+-->
+
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>net.java.jsr375</groupId>
+	<artifactId>javaee-security-examples</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<currentYear>2018</currentYear>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-api</artifactId>
+			<version>7.0</version>
+		</dependency>
+	</dependencies>
+
+	<modules>
+		<module>simple-jaas-example</module>
+		<module>roles-allowed-and-runas</module>
+		<module>simple-jaspic-example</module>
+		<module>rest-basic-example</module>
+	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<optimize>true</optimize>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+
+			<!-- ======================================================= -->
+			<!-- Maven License Plugin -->
+			<!-- ======================================================= -->
+			<plugin>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>3.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<header>src/license/header.txt</header>
+					<properties>
+						<owner>Oracle</owner>
+						<currentYear>2018</currentYear>
+					</properties>
+					<excludes>
+						<exclude>**/*.adoc</exclude>
+						<exclude>**/*.launch</exclude>
+						<exclude>**/*.sh</exclude>
+						<exclude>**/pom.xml</exclude>
+						<exclude>**/beans.xml</exclude>
+						<exclude>**/README</exclude>
+						<exclude>**/settings.xml</exclude>
+						<exclude>src/license/**</exclude>
+						<exclude>src/test/resources/**</exclude>
+						<exclude>src/main/resources/**</exclude>
+					</excludes>
+					<headerDefinitions>
+						<headerDefinition>src/license/headers.xml</headerDefinition>
+					</headerDefinitions>
+					<mapping>
+						<java>JAVA_STYLE</java>
+					</mapping>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<inceptionYear>2015</inceptionYear>
+</project>
+

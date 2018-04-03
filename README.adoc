@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////////////////////////
+
+    Copyright (c) 2018 Oracle and/or its affiliates. All rights reserved.
+
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Distribution License v. 1.0, which is available at
+    http://www.eclipse.org/org/documents/edl-v10.php.
+
+    SPDX-License-Identifier: BSD-3-Clause
+
+///////////////////////////////////////////////////////////////////////////////
+
+= Examples
+
+The goal if this repo is to get everyone on the same page with level of knowledge.
+
+If you know something, share it!
+
+You don't need to be in the EG to contribute.  Helping raise awareness and educate are critical tasks.
+
+This repo is dedicated to spreading that knowledge and getting us all on the same page.  No assumed knowledge required.
+
+The more we collect samples of existing capabilities the better our odds of success.  We can take the good parts, leave the rest and drive commonality across the platform.
