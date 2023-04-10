@@ -28,3 +28,4 @@ target/
 /**/.classpath
 /**/.project
 /**/.gitignore
+/injectable-ham/src/main/webapp/WEB-INF/glassfish-web.xml
