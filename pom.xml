@@ -35,6 +35,7 @@
 		<module>roles-allowed-and-runas</module>
 		<module>simple-jaspic-example</module>
 		<module>rest-basic-example</module>
+                <module>injectable-ham</module>
 	</modules>
 
 	<build>

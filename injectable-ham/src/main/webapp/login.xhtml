@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Login form</title>
+    </h:head>
+    <h:body>
+
+
+        <form style="margin: 1rem" method="POST" action="j_security_check">
+            <p>User:
+                <input type="text" name="j_username"/>
+            </p>
+            <p>Password:
+                <input type="password" name="j_password" autocomplete="off"/>
+            </p>
+            <p><button type="submit">Log in</button>
+            </p>
+        </form>
+
+
+    </h:body>
+</html>
